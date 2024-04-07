@@ -1,4 +1,3 @@
-#test
 # cd model
 # python save.py -c '***AZURE_STORAGE_CONNECTION_STRING***'
 
