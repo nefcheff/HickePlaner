@@ -41,14 +41,6 @@
 </script>
 
 <h1>HikePlanner</h1>
-<p>
-    Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
-
-<button on:click={increment}>
-    Clicked {count}
-    {count === 1 ? "time" : "times"}
-</button>
 
 <p>
     <strong>Abwärts [m]</strong>
@@ -73,18 +65,21 @@
         <input type="range" bind:value={length} min="0" max="30000" />
     </label>
 </p>
-
-<button on:click={predict}>Predict</button>
-
+<div style="display: flex; justify-content: center;">
+    <button on:click={predict}>Predict</button>
+</div>
 <p></p>
-<table>
-    <tr>
-        <td>Dauer:</td><td>{prediction}</td>
-    </tr>
-    <tr>
-        <td>DIN33466:</td><td>{din33466}</td>
-    </tr>
-    <tr>
-        <td>SAC:</td><td>{sac}</td>
-    </tr>
-</table>
+<div style="display: flex; justify-content: center;">
+    <table>
+        <tr>
+            <td>Dauer:</td><td>{prediction}</td>
+        </tr>
+        <tr>
+            <td>DIN33466:</td><td>{din33466}</td>
+        </tr>
+        <tr>
+            <td>SAC:</td><td>{sac}</td>
+        </tr>
+    </table>
+</div>
+
